@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Photography Website</title>
+    <script src="../scripts/dynamic_base_loader.js" defer></script>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        // Load the content of index.html into the current page
+        loadHTML('../pages/index.html', function() {
+            // Optionally, you can add additional JavaScript logic here
+            console.log('Base HTML loaded successfully');
+        });
+    </script>
+
+    <script>
+        // Load the content of index.html into the current page
+        loadCSS('../pages/index.html', function() {
+            // Optionally, you can add additional JavaScript logic here
+            console.log('Base HTML loaded successfully');
+        });
+    </script>
+
+</body>
+</html>
