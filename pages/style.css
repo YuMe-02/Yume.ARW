@@ -1,12 +1,5 @@
 /* style.css */
 
-@font-face {
-    font-family: 'Goudy Bookletter 1911';
-    src: url('Goudy_Bookletter_1911/GoudyBookletter1911-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: 'Goudy Bookletter 1911', serif;
     margin: 0;
@@ -16,7 +9,7 @@ body {
 .logo {
     width: 125px;
     height: 70px;
-    background-image: url('svgviewer-output.svg'); /* Specify your default logo image here */
+    background-image: url('../images/svgviewer-output.svg'); /* Specify your default logo image here */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
