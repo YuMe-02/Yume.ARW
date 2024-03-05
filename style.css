@@ -1,142 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+/* style.css */
+
+@font-face {
+    font-family: 'Goudy Bookletter 1911';
+    src: url('Goudy_Bookletter_1911/GoudyBookletter1911-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-height: 100vh;
-background-color: #fff;
-background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
-background-size: cover;
-background-position: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0;
+    padding: 0;
 }
 
-li {
-list-style: none;
-}
-
-a {
-text-decoration: none;
-color: #fff;
-font-size: 1rem;
-}
-
-a:hover {
-    color: orange
-}
-
-header {
-    position: relative;
-    padding: 0 2rem;
-}
-
-.navbar {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
+.logo {
+    width: 125px;
+    height: 70px;
+    background-image: url('svgviewer-output.svg'); /* Specify your default logo image here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    opacity: 1;
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo:hover {
+    transform: scale(1.25); /* Scale the logo by 10% on hover */
 }
 
-.navbar .links {
-    display: flex;
-    gap: 2rem;
+/* Rest of your CSS */
+
+nav {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Set the opacity of the border */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Set the opacity of the border */
 }
 
-.navbar .toggle_btn {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li.center a {
+    color: red; /* Change text color to red */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Adjust the left and right margins */
+}
+
+nav ul li a {
     color: #000;
-    font-size: 1.5rem;
-    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the font size */
+    transition: color 0.3s, text-decoration 0.3s, font-size 0.3s; /* Include font-size in the transition */
 }
 
-.action_btn{
-    background-color: orange;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: .8rem;
-    font-weight: bold;
-    cursor: pointer;
+nav ul li:hover {
+    color: #000;
+    text-decoration: underline;
+    transform: scale(1.5); /* Scale the li elements by 10% on hover */
 }
 
-.action_btn:hover{
-    scale: 1.05;
-    color: orange; 
+nav ul li:hover a {
+    font-size: 20px; /* Adjust the font size on hover */
 }
 
-.action_btn:active {
-    scale: .95;
+.content {
+    padding: 20px;
+    text-align: center;
 }
 
-/* DROPDOWN MENU */
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    /*height: 0;*/
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.content h2 {
+    color: #333;
 }
 
-.dropdown_menu.open{
-    height: 240px;
+.content p {
+    color: #666;
+    line-height: 1.6;
 }
 
-.dropdown_menu li {
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
-
-.dropdown_menu .action_btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* RESPONSIVE DEISGN */
-@media (max-width: 992px) {
-    .navbar .links,
-    .navbar .action_butn {
-        display: none;
-    }
-
-    .navbar .toggle_btn{
-        display: block;
-    }
-
-}
-
-/*
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('dropdown_menu')
-
-        toggle_Btn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggle_BtnIcon.onclick = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
-*/
