@@ -32,6 +32,7 @@ nav {
     padding: 20px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2); /* Set the opacity of the border */
     border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Set the opacity of the border */
+    font-weight: bold;
 }
 
 nav ul {
