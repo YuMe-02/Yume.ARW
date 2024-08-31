@@ -129,6 +129,11 @@ header {
     max-height: 100%;
 }
 
+.display_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* RESPONSIVE DESIGN */
 @media(max-width: 600px) {
     .navbar .links,
