@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Photography Website</title>
+    <title> Home Page Photo-Site</title>
     <link rel="stylesheet" href="./pages/style.css">
-    <!-- Add Google Fonts link -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
-    <style>
-        /* Remove @font-face block */
-    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
+
 <body>
-    <div class="banner">
-        <a href="index.html">
-            <div class="logo"></div> <!-- "Yume.Arw" -->
-        </a>
-    </div>
-    <nav id="navbar">
-        <ul>
-            <li><a href="./pages/index.html">Home</a></li> <!-- Wrapped "Home" with an <a> tag -->
-            <li><a href="./pages/about.html">About</a></li>
-            <li class="center"><a href="./pages/journal.html">Journal</a></li> <!-- Added class "center" -->
-            <li><a href="./pages/gear.html">Gear</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
+    
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./images/svgviewer-output.svg"></a>
+            <!-- <a href="index.html"> Joe MOMMA INC </a> -->
+        </div>
+        
+        <ul class = "links">
+            <li><a = href="pages/journal.html"> Journal </a></li>
+            <li><a = href="pages/about.html"> About </a></li>
+            <li><a = href="pages/gear.html"> Gear</a></li>
         </ul>
-    </nav>
 
-    <!-- Large Picture Container -->
-    <div class="large-picture">
-        <img src="large-picture.jpg" alt="Large Picture">
+        <ul class="socials">
+            <li><a = href="pages/about.html"> <i class="fa-brands fa-instagram"> </i> </a> </li>
+            <li><a = href="pages/gear.html"> <i class="fa-brands fa-pinterest"> </i> </a> </li>
+            <li><a = href="pages/journal.html">  <i class="fa-brands fa-etsy"> </i> </a> </li>
+        </ul>
+
+        <!-- <a = href = "#" class = "action_btn"> Get Started </a> -->
+        
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Your Photography Website. All rights reserved.</p>
-    </footer>
-
-    <!-- Import JavaScript -->
-    <script src="script.js"></script>
 </body>
+
+
+<footer>
+    <h2> MaMa </h2>
+</footer>
+
 </html>
