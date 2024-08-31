@@ -57,7 +57,8 @@ header {
     margin-top: 5%;
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
-    padding-left: 80%;
+    /* padding-left: 80%; */
+    padding-left: 120px;
 }
 
 .navbar .logo img:hover {
