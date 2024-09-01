@@ -10,7 +10,12 @@
 }
 
 .body {
+    height: 100vh;
     background-color: #fffcf4;
+    background-image: url("../images/bridge_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 li {
@@ -22,7 +27,6 @@ li {
 li:hover {
     transform: scale(1.33); /* Scale the logo by 10% on hover */
 }
-
 
 a {
     text-decoration: none;
